@@ -1748,7 +1748,7 @@ define Device/xiaomi_mi-router-4a-gigabit
   DEVICE_VENDOR := Xiaomi
   DEVICE_MODEL := Mi Router 4A
   DEVICE_VARIANT := Gigabit Edition
-  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt7615e kmod-mt7663-firmware-ap 
 endef
 TARGET_DEVICES += xiaomi_mi-router-4a-gigabit
 
