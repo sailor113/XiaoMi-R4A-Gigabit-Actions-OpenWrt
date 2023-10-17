@@ -1,14 +1,3 @@
---- a/include/kernel-defaults.mk
-+++ b/include/kernel-defaults.mk
-@@ -118,7 +118,8 @@
- 		cp $(LINUX_DIR)/.config.set $(LINUX_DIR)/.config.prev; \
- 	}
- 	$(_SINGLE) [ -d $(LINUX_DIR)/user_headers ] || $(KERNEL_MAKE) INSTALL_HDR_PATH=$(LINUX_DIR)/user_headers headers_install
--	grep '=[ym]' $(LINUX_DIR)/.config.set | LC_ALL=C sort | $(MKHASH) md5 > $(LINUX_DIR)/.vermagic
-+#	grep '=[ym]' $(LINUX_DIR)/.config.set | LC_ALL=C sort | $(MKHASH) md5 > $(LINUX_DIR)/.vermagic
-+	grep '=[ym]' $(LINUX_DIR)/.config.set | LC_ALL=C sort | echo 2d6f3ce75b5e7700b705cb00cd526063 > $(LINUX_DIR)/.vermagic
- endef
- 
  define Kernel/Configure/Initramfs
 --- a/target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit-v2.dts
 +++ b/target/linux/ramips/dts/mt7621_xiaomi_mi-router-4a-gigabit-v2.dts
