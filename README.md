@@ -1,5 +1,10 @@
 [Actions-OpenWrt 说明文档](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
 
+
+！！！！！！！！！！！！！！！！！！！！
+想在.config去掉某项功能，要删除CONFIG_DEFAULT_XXX这一类条目。
+！！！！！！！！！！！！！！！！！！
+
 # 适用于小米路由器4A千兆版的Actions-OpenWrt
 
 这是一个基于[P3TERX的Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)的自动编译项目，做了一些小修改，默认用[lean's OpenWRT分支](https://github.com/coolsnowwolf/lede)编译，导入了[kenzok8的常用软件库](https://github.com/kenzok8/small-package)
