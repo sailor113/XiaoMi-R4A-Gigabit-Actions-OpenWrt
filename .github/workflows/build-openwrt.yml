@@ -110,6 +110,8 @@ jobs:
 
     - name: Compile the firmware
       id: compile
+      env:
+        GO_VERSION: "1.22"
       run: |
         cd openwrt
         echo -e "$(nproc) thread compile"
