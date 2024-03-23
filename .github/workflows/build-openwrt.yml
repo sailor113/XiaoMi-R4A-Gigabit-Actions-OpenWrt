@@ -110,7 +110,7 @@ jobs:
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
 
-    - name: update go
+    - name: update go 
     - run: go mod edit -go=1.22
 
     - name: Compile the firmware
