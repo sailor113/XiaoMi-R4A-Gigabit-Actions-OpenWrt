@@ -112,12 +112,9 @@ jobs:
 
     - name: update go 
       run: |
-          wget  https://dl.google.com/go/go1.22.0.linux-amd64.tar.gz
-          sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.0.linux-amd64.tar.gz
-          sudo rm /usr/bin/go
-          sudo ln -s /usr/local/go/bin/go /usr/bin/go
-          export PATH=$PATH:/usr/local/go/bin
-          go version
+          rm -rf feeds/packages/lang/golang
+          git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+
 
     - name: Compile the firmware
       id: compile
